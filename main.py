@@ -2,7 +2,6 @@
 This module demonstrates a pylint workflow and contains functions
 for data transformation and Fibonacci calculation.
 """
-import os # Unused import 'sys' has been removed.
 
 def transform_data(data_list):
     """Transforms a list of numbers, doubling evens and tripling odds."""
@@ -22,10 +21,6 @@ def calculate_fibonacci(num):
     if num in (0, 1):
         return num
     return calculate_fibonacci(num - 1) + calculate_fibonacci(num - 2)
-
-# Line is now broken into a more readable format.
-# Note: unused 'long_variable_name_for_demonstration' and 'os' are removed
-# to pass pylint checks for unused variables/imports.
 
 MY_DATA = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
